@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height= "wrap_content"
+      >
+<LinearLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+    android:orientation="vertical"
+    tools:context=".EncodeActivity" 
+   >
+
+    <TextView
+        android:id="@+id/encodeHeading"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="@string/encodeHeading"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/encodedImage"
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        android:contentDescription="@string/encodedImage_cd"
+        android:src="@drawable/bg_pic"
+        android:visibility="invisible" />
+ 
+    
+    <Button
+        android:id="@+id/taskHistoryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/taskHistory"
+        android:visibility="visible" />
+ 
+   
+    <TextView
+        android:id="@+id/message_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message_desc"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/user_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.28"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/EXIFcheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ExifCheckbox"
+        android:onClick="onCheckboxClick" />
+
+    <Button
+        android:id="@+id/encode"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_weight="1"
+        android:text="@string/encode" 
+        android:textStyle="bold"/>
+
+</LinearLayout>
+
+</ScrollView>

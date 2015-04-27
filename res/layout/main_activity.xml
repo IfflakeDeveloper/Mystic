@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+   
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="@string/appname"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+       />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="@string/heading1"
+        android:textColor="#800000" />
+
+     <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imageViewCD"
+        android:src="@android:drawable/screen_background_light_transparent"
+        android:visibility="invisible" />
+    
+    
+    <ImageButton
+        android:id="@+id/toDecode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:contentDescription="@string/imageViewCD"
+        android:text="@string/decodeButtonName"
+        android:src="@drawable/key"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/browse_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/browseButtonName"
+        android:src="@drawable/photos"
+        android:text="@string/browseButtonName"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/toEncode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imageViewCD"
+        android:text="@string/encodeButtonName"
+        android:src="@drawable/lock"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/cameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imageViewCD"
+        android:src="@drawable/camera" />
+
+    
+    
+</LinearLayout>

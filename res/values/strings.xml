@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mystic</string>
+    <string name="heading1">Select an image:</string>
+	<string name="browseButtonName">Browse</string>
+	<string name="imageViewCD"> blank </string>
+	<string name="encodeButtonName">Encode</string>
+	<string name="decodeButtonName">Decode</string>
+	<string name="appname">IMAGE STEGANOGRAPHY</string>
+	<string name="take_photo">Camera</string>
+	<string name="taskHistory">Task History</string>
+	
+	<!-- Encoding Activity -->
+
+	<string name="encodeHeading">Encode your message into the image: </string>
+	<string name="encodedImage_cd">Show the encoded image</string>
+	<string name="message_desc">Enter the message: </string>
+	<string name="encode">ENCODE</string>
+	<string name="dialog_message">Message encoded successfully!</string>
+	<string name="dialog_title">Encoding status</string>
+	<string name="decoded_title">Decode Successful! </string>
+	<string name="ExifCheckbox">EXIF data of this image</string>
+</resources>

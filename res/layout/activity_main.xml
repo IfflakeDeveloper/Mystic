@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toEncode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:contentDescription="@string/imageViewCD"
+        android:src="@android:drawable/screen_background_light_transparent"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/appname"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+       />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="@string/heading1"
+        android:textColor="#800000" />
+
+    <ImageButton
+        android:id="@+id/toDecode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imageViewCD"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:src="@drawable/key"
+        android:text="@string/decodeButtonName"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/browse_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/textView1"
+        android:contentDescription="@string/browseButtonName"
+        android:src="@drawable/photos"
+        android:text="@string/browseButtonName"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/toEncode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"        
+        android:contentDescription="@string/imageViewCD"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_toRightOf="@+id/cameraButton"
+        android:src="@drawable/lock"
+        android:text="@string/encodeButtonName"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/cameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imageViewCD"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_toRightOf="@+id/browse_button"
+        android:src="@drawable/camera" />
+
+</RelativeLayout>
